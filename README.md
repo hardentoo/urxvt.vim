@@ -5,9 +5,9 @@ https://github.com/kovetskiy/urxvt-fifo
 
 # Installation
 
-For plug.vim users:
-
+```
 Plug 'kovetskiy/urxvt.vim'
+```
 
 # Usage
 
@@ -23,5 +23,5 @@ augroup end
 exec `go build` in the terminal
 
 ```
-nmap <Leader>b call urxvt#put('go build')
+nmap <Leader>b :call urxvt#put('go build')<CR>
 ```
