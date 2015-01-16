@@ -3,7 +3,8 @@ if !exists('g:urxvt_fifo')
 endif
 
 fu! urxvt#put(cmd)
-    return system('echo "' . a:cmd . '" > ' . g:urxvt_fifo)
+    return system('ps -p `cat ' . g:urxvt_fifo . '.pid` > /dev/null && ' .
+                \ 'echo "' . a:cmd . '" > ' . g:urxvt_fifo)
 endfu!
 
 fu! urxvt#change_dir()
