@@ -9,6 +9,12 @@ https://github.com/kovetskiy/urxvt-fifo
 Plug 'kovetskiy/urxvt.vim'
 ```
 
+You can specify path to fifo file:
+
+```
+let g:urxvt_fifo=$HOME . '/.urxvt/urxvt.fifo'
+```
+
 # Usage
 
 for example autochange directory in terminal
